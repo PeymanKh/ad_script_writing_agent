@@ -1,0 +1,154 @@
+key_principles:
+  - "Capture attention within the first two seconds and remain thumb-stop worthy throughout, as Reels is engineered for algorithmic discovery based on watch time, sends per reach, and engagement velocity."
+  - "Prioritize UGC-style footage, peer-to-peer demos, and real voices over polished studio work, as they drive higher trust and stronger perceived brand credibility."
+  - "Keep content concise and fast-paced, delivering the message efficiently and focusing on one primary benefit or feature per ad."
+  - "Embrace authenticity and relatability, mimicking user-generated content (UGC) or featuring real people in real-life scenarios."
+  - "Showcase the app in action, demonstrating its core functionality and how it solves a problem or adds value."
+  - "Strategically use trending audio for maximizing impact and leveraging algorithmic boosts when sound is enabled."
+  - "Include a clear, prominent, and unambiguous call-to-action (CTA) that visually and verbally directs users to the desired action."
+  - "Utilize deep-link CTAs to send users directly to the App Store or Google Play, minimizing friction in Reels’ impulse-driven environment."
+  - "Continuously A/B test different creative elements to optimize performance and conversion rates."
+
+do_and_dont_s:
+  do:
+    - "Build for a 6-15 second 'sweet-spot' duration, as shorter ads drive significantly more sales per-view than long-form content."
+    - "Keep the ad concise and fast-paced with quick cuts and transitions, delivering the message efficiently."
+    - "Open with a high-contrast hook (movement, text, or bold claim) in the first 0-2 seconds to maximize retention."
+    - "Show app's core functionality visually by showcasing the app in action within 3 seconds, such as a screen recording overlay on a phone frame."
+    - "Add on-screen captions or dynamic subtitles for silent-scrollers, as 80% of Gen Z watch with sound off."
+    - "Use single-word CTAs like 'Install,' 'Play,' or 'Book' inside sticker overlays for immediacy."
+    - "Employ the 4 C’s (Community-based, Captivating, Credible, Clear) to structure each scene."
+  dont:
+    - "Start with a slow introduction, lengthy intros, static brand logos, or disclaimers that delay the hook."
+    - "Over-produce or make the ad look like a traditional commercial with overly glossy or generic stock footage."
+    - "Neglect audio or use generic background music; leverage trending sounds or compelling sound design."
+    - "Overwhelm with too much information; focus on one key message or primary benefit per ad."
+    - "Hide CTA behind long copy; mobile eye-flow favors large, central tap targets."
+    - "Stuff hashtags in ad copy, as Meta’s studies show negligible lift for hashtags in paid placements."
+
+script_flow_guide:
+  - step_number: 1
+    name: "The Hook"
+    purpose: "To immediately capture attention and make the audience feel seen/interested, serving as a make-or-break moment."
+    typical_duration_seconds: "0-3s"
+    common_techniques:
+      - "Present a relatable problem: Show a user reacting visually to a common pain point (e.g., messy desk, slow computer)."
+      - "Use a punchy, scroll-stopping direct question: Display bold text on screen with a question that immediately grabs attention, potentially with a user looking puzzled."
+      - "Showcase a surprising visual: Start with an unexpected visual shock cut (e.g., a rapid montage of before-and-after, an unusual object)."
+      - "Visually depict the 'before' state: Illustrate the problem the app solves (e.g., struggling with paper maps for a navigation app)."
+    core_messaging_focus:
+      - "Signal the core value proposition of the app immediately."
+      - "Be a micro-story or micro-demonstration of the app's core benefit."
+      - "Intrigue and immediate relevance."
+    emotional_arc_contribution: "Curiosity, Surprise, Intrigue"
+    common_pitfalls:
+      - "Lengthy intros."
+      - "Disclaimers that delay the hook."
+      - "Starting with logo stings or slow fades, as they kill watch-time algorithms."
+    tone_adaptation_nuances:
+      - "Delivering a 'value bomb' immediately."
+      - "Conversational curiosity. Use narrative hook questions that mirror TikTok vernacular."
+      - "Highly condensed, almost telegraphic communication style where every frame and word is meticulously chosen for maximum impact."
+    optimization:
+      - "Reels is engineered for algorithmic discovery, pushing content to non-followers based on watch time."
+      - "It must remain thumb-stop worthy throughout."
+    successful_examples_brief:
+      - "Timer graphic counts down from 10 s while creator shows how to book a flight in-app (e.g., 'Can you book a flight in 10 s?')."
+      - "A user quickly expresses frustration with a common daily problem (e.g., 'Ugh, organizing my tasks is impossible!')."
+      - "A frustrated commuter tries to hail a cab (e.g., 'It's impossible to get a cab during rush hour!')."
+
+  - step_number: 2
+    name: "Problem/Solution or Benefit Showcase"
+    purpose: "Show the app solving a pain point and demonstrating its value."
+    typical_duration_seconds: "5-8s"
+    common_techniques:
+      - "Visually showcasing the app in action."
+      - "Highlighting most compelling features."
+      - "Fast cuts and dynamic visuals."
+      - "Screen recording of a user effortlessly navigating the app."
+      - "Quick tutorial demonstrating a key feature."
+      - "Depiction of a user achieving a desired outcome through the app."
+    core_messaging_focus:
+      - "Problem-solving, immediate benefit of the app"
+      - "Reinforce the primary benefit previously showcased."
+      - "Provide an immediate, low-friction path to app store."
+    emotional_arc_contribution: "Relief, Understanding of solution, Satisfaction of fulfilling interest"
+    common_pitfalls:
+      - "Not using fast cuts and dynamic visuals, which can lead to user disinterest."
+    tone_adaptation_nuances:
+      - "Initially demonstrate empathy for the user's pain point, then swiftly pivot to an empowering, solution-oriented message."
+      - "Convey that the app offers an easy, effective way to overcome a challenge, ultimately improving the user's life."
+      - "Articulate the user's pain point in a manner that deeply resonates, then quickly transition to a positive, optimistic, and encouraging message about how the app provides freedom, efficiency, or a superior outcome."
+    successful_examples_brief:
+      - "A user quickly expresses frustration with a common daily problem, then the scene immediately cuts to them effortlessly using the app to solve that problem."
+
+  - step_number: 3
+    name: "Call-to-Action (CTA)"
+    purpose: "Clearly, concisely, and compellingly direct users on the desired action."
+    typical_duration_seconds: "5-8s"
+    common_techniques:
+      - "Direct visual CTA such as 'Download Now,' 'Get the App,' or 'Install [App Name].'"
+      - "Verbal CTA reinforcement such as 'Download [App Name] today!' or 'Link in bio to get started!'"
+      - "Compelling written CTA in the caption."
+      - "Direct link to the app store or relevant landing page."
+      - "Tap-Prompt End-Card such as 'Download Free' on final 2 s full-frame with App Store & Google Play badges"
+      - "Looping Auto-Caption CTA such as Sync dynamic captions with spoken directive (e.g., 'Tap to start saving')"
+    core_messaging_focus:
+      - "Reinforce the primary benefit previously showcased."
+      - "Explicitly direct users on where to go next (e.g., 'Download on the App Store,' 'Link in Bio,' 'Get the App')."
+      - "Direct instruction, ease of access"
+    emotional_arc_contribution: "Action, Urgency, Satisfaction of fulfilling interest"
+    common_pitfalls:
+      - "Not being visually prominent."
+      - "Ambiguity or hidden CTAs introduce friction, leading directly to user drop-offs."
+      - "Hiding CTA behind long copy; mobile eye-flow favors large, central tap targets."
+    tone_adaptation_nuances:
+      - "Explicitly direct users."
+      - "Needs to be presented before the user has an opportunity to swipe away."
+      - "Should be integrated naturally into the ad's flow, appearing as the logical next step."
+    successful_examples_brief:
+      - "Clear branded frame with Apple App Store/Google Play badges, deep-link, and single word sticker ('Install')."
+      - "Users sharing a one-sentence benefit each before pointing at pop-up Install sticker."
+      - "CTA end-card pushes download."
+
+on_screen_text:
+  purpose: "To convey key messages, benefits, and calls-to-action, especially for users who scroll with sound off."
+  common_types_techniques:
+    - "Employ clear, concise text overlays."
+    - "Ensure the app name, key benefit, and call-to-action are conveyed through on-screen text or highly intuitive visuals."
+    - "Utilize the Instagram caption space for further details, relevant hashtags, and a clear call-to-action."
+
+overall_visual_directives:
+  - "Prioritize fast cuts and dynamic visuals to maintain visual interest and ensure the ad feels energetic."
+  - "Employ quick scene changes, jump cuts, and dynamic camera movements."
+  - "Avoid static shots or slow pans."
+  - "Prioritize visuals that appear to be shot on a smartphone, embracing natural lighting and a handheld camera feel."
+
+overall_audio_directives:
+  - "Strategically use trending audio and engaging sound design."
+  - "Leverage trending sounds for algorithmic visibility and cultural relevance."
+  - "Consider how sound effects and voiceovers can enhance the overall message."
+  - "Strategic sound design can highlight specific app features, create emotional resonance, or add humor."
+  - "Ensure audio levels are balanced and clear throughout the ad."
+  - "Incorporate UI sounds from the app, satisfying clicks, clear voiceovers explaining benefits, or ambient sounds that establish a scene."
+
+primary_effectiveness_drivers:
+  - "The ability to capture attention within the initial 1-3 seconds."
+  - "Algorithmic discovery based on watch time, sends per reach, and engagement velocity."
+  - "Authenticity and relatability of UGC-style footage."
+  - "Immediate communication of the core value proposition."
+  - "High-contrast hooks and visual app value demonstration in the first few seconds."
+  - "Optimization for both sound-on and sound-off viewing."
+  - "Clear, prominent, and unambiguous calls-to-action."
+  - "Conciseness and fast-paced delivery of the message."
+  - "Seamless conversion funnel from ad to app store."
+
+typical_performance_metrics_focus:
+  - "Maximize Watch-Time Quartiles by crafting scripts that retain viewer attention, aiming for high 75% view-through rates."
+  - "Increase Sends per Reach by encouraging ad content that is highly shareable and likely to be direct-messaged."
+  - "Drive higher App Install Rate by making calls-to-action clear, compelling, and frictionless."
+  - "Boost Ad Recall by ensuring memorable, distinctive messaging and visuals."
+  - "Elevate Purchase Intent through persuasive benefit communication and emotional resonance."
+  - "Raise Click-Through Rate (CTR) by using interactive elements and engaging hooks."
+  - "Optimize ROAS (Return On Ad Spend) by prompting efficient conversions through tailored value propositions."
+  - "Lower CPM (Cost Per Mille) by designing hook frames that immediately grab attention and outperform benchmarks."

@@ -1,0 +1,15 @@
+[theme]
+# Dark theme colors
+primaryColor = "#4f46e5"
+backgroundColor = "#0f172a"
+secondaryBackgroundColor = "#1e293b"
+textColor = "#e2e8f0"
+base = "dark"
+
+[server]
+headless = true
+port = 8501
+runOnSave = true
+
+[ui]
+hideTopBar = false
