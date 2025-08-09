@@ -348,35 +348,33 @@ class EvaluationReport(BaseModel):
     )
 
 
-class AdVariant(BaseModel):
+class VariationRequest(BaseModel):
     """
-    Represents a single A/B test ad variant.
+    Request for generating a single A/B test variation with specific changes.
     """
-    variant_name: str = Field(..., description="A unique name or identifier for the ad variant (e.g., 'Variant A - Hook Focus').")
-    variant_type: str = Field(..., description="Describes the type of variation (e.g., 'Hook Change', 'CTA Variation', 'Tone Adjustment').")
-    ad_script: ScriptDraft = Field(..., description="The full, structured ScriptDraft object for this variant.")
-    notes: Optional[str] = Field(None, description="Any specific notes about this variant or its intended effect.")
+    variation_focus: str = Field(
+        ...,
+        description="The primary focus of this variation (e.g., 'Hook + CTA + Emotional Tone')"
+    )
+    target_changes: List[str] = Field(
+        ...,
+        description="Specific changes to make: hook modification, CTA enhancement, emotional tone shift"
+    )
 
-    # A field validator to handle the common LLM error of serializing a nested JSON
-    @field_validator('ad_script', mode='before')
-    @classmethod
-    def validate_ad_script_json_string(cls, v):
-        """
-        If the ad_script is a string, it's likely a JSON object serialized
-        by the LLM. This validator will parse it before Pydantic validates it.
-        """
-        if isinstance(v, str):
-            try:
-                return json.loads(v)
-            except json.JSONDecodeError:
-                pass
-        return v
 
-class FinalScriptVariants(BaseModel):
+class SingleVariation(BaseModel):
     """
-    A container for all final, approved script variants.
+    Represents a single, refined A/B test variation.
     """
-    final_scripts_variants: List[AdVariant] = Field(..., description="A list of generated ad variants for A/B testing.")
+    variation_name: str = Field(..., description="Name/identifier for this variation")
+    variation_type: str = Field(..., description="Type of variation (e.g., 'Enhanced Hook + CTA + Tone')")
+    base_script_comparison: str = Field(..., description="Brief comparison with the base script")
+    ad_script_variation: ScriptDraft = Field(..., description="The refined variation script")
+    variation_evaluation_report: Optional[EvaluationReport] = Field(
+        default=None, description="Final evaluation report for this variation"
+    )
+    variation_iteration_count: int = Field(default=0, description="Number of refinement iterations")
+    notes: Optional[str] = Field(None, description="Additional notes about this variation")
 
 
 class AgentState(BaseModel):
@@ -446,9 +444,29 @@ class AgentState(BaseModel):
         default=None,
         description="Evaluator or reviewer feedback with specific revision requests for the scriptwriter."
     )
-    final_scripts_variants: Optional[FinalScriptVariants] = Field(
+    variation_request: Optional[VariationRequest] = Field(
         default=None,
-        description="Container for all final, approved script variants for A/B testing."
+        description="Request details for generating a single variation"
+    )
+    variation_script_draft: Optional[ScriptDraft] = Field(
+        default=None,
+        description="Current working draft of the variation script"
+    )
+    variation_evaluation_report: Optional[EvaluationReport] = Field(
+        default=None,
+        description="Evaluation report for the variation script"
+    )
+    variation_iteration_count: int = Field(
+        default=0,
+        description="Number of refinement iterations for the variation"
+    )
+    single_variation_result: Optional[SingleVariation] = Field(
+        default=None,
+        description="Final single variation result with all refinements"
+    )
+    is_variation_workflow: bool = Field(
+        default=False,
+        description="Flag to indicate if this is a variation generation workflow"
     )
     tool_calls_history: Optional[List[Dict]] = Field(
         default=None,
