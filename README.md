@@ -58,8 +58,8 @@ To get your project set up and running, you'll need to follow a few straightforw
 
 1.  **Clone the repository:**
     ```bash
-    git clone https://github.com/PeymanKh/ad_script_agent_ui.git
-    cd ad_script_agent_ui
+    git clone https://github.com/PeymanKh/ad_script_writing_agent.git
+    cd ad_script_writing_agent
     ```
 
 2.  **Install dependencies:**
