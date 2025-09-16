@@ -25,7 +25,7 @@ When it comes to AI copywriting, LLMs can certainly help, but their responses ar
 
 In this system multi-agent system, the complex process of effective copywriting has been modularized. By assigning each step to a different LLM, we can have more control over the reasoning and creative process. This strategic orchestration ensures a higher standard of quality and more reliable output compared to a single, generalized model. The workflow is structured as follows:
 
-![Workflow Diagram](diagram/main_graph.png)
+![Workflow Diagram](diagram/graph_diagram.png)
 
 1.  **Input Collection:** The user provides crucial campaign details, including:
     * **Campaign goal**
