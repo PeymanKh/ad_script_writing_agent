@@ -12,8 +12,6 @@ When it comes to AI copywriting, LLMs can certainly help, but their responses ar
 
 ## Table of Contents
 
-## Table of Contents
-
 - [System Orchestration](#system-orchestration)
 - [Prerequisites](#prerequisites)
 - [Installation](#installation)
@@ -44,9 +42,8 @@ In this system multi-agent system, the complex process of effective copywriting 
 5.  **Script Evaluation Node (Ad Script Evaluator):** This node functions as an **Ad Script Evaluator**. Its primary role is to assess the generated script draft against all preceding inputs, including the original campaign brief, the creative strategy, and the detailed audience insights. The evaluation is scoring the script on multiple criteria such as **hook effectiveness**, **clarity**, **emotional appeal**, and **platform compliance**. The core responsibility of this node is to determine if the script is ready for the next stage of the workflow. If the script does not meet the high-quality standards (e.g., scores are too low), this node provides highly specific, actionable feedback and recommendations in a "change THIS to THAT" format. This feedback is designed to be a direct guide for the next node, ensuring the script can be revised to a production-ready quality.
 
 6. **Script Refinement Node (Ad Script Refiner):** This node is an expert **Ad Script Refiner**. Its sole purpose is to take the script and the actionable feedback from the **Script Evaluation Node** and iteratively improve it. It operates on a "change THIS to THAT" logic, meticulously implementing the precise recommendations provided to elevate the script's quality. This node focuses exclusively on revision, not on new creative generation. It directly modifies the script's content—such as body copy, on-screen text, or visual descriptions—until it meets the high standards for final approval, ensuring the final output is a polished, production-ready ad script.
----
 
-To get your project set up and running, you'll need to follow a few straightforward steps. 
+---
 
 ## Prerequisites
 
@@ -55,11 +52,12 @@ To get your project set up and running, you'll need to follow a few straightforw
 - **Gemini or OpenAI API key**: The project relies on API keys from both Google's **Gemini** and OpenAI's **GPT** models. If you only have one of these keys, you can edit the code inside `src/agent/nodes` to use your preferred model for each node.***
 
 ## Installation
+To get your project set up and running, you'll need to follow a few straightforward steps. 
 
 1.  **Clone the repository:**
     ```bash
-    git clone https://github.com/PeymanKh/ad_script_agent_ui.git
-    cd ad_script_agent_ui
+    git clone https://github.com/PeymanKh/ad_script_writing_agent.git
+    cd ad_script_writing_agent
     ```
 
 2.  **Install dependencies:**
