@@ -39,20 +39,6 @@ class LangChainConfig(BaseSettings):
     log_level: LogLevel = Field(description="Logging level")
     log_format: str = Field(description="Log format")
 
-    # GCP SETTINGS
-    project_id: str = Field(description="GCP Project ID")
-    region: str = Field(description="GCP Region")
-
-    # DATABASE SETTINGS
-    db_uri: str = Field(description="Database URI")
-    db_name: str = Field(description="Database name")
-
-
-    # LLM PROVIDER SETTINGS
-    langchain_api_key: SecretStr = Field(description="Langchain API key")
-    langchain_project: str = Field(description="Langchain project name")
-    tavily_api_key: SecretStr = Field(description="Tavily API key")
-
     # Node1: Audience Insight
     audience_insight_llm: str = Field(description="LLM name for audience insight node")
     audience_insight_api_key: str = Field(description="API key audience insight LLM")
@@ -76,12 +62,6 @@ class LangChainConfig(BaseSettings):
     script_evaluation_and_refinement_llm: str = Field(description="LLM name for script evaluation node")
     script_evaluation_and_refinement_api_key: str = Field(description="API key script evaluation LLM")
     script_evaluation_and_refinement_temperature: str = Field(description="Temperature for script evaluation node")
-
-    # Google
-    google_api_key: SecretStr = Field(description="Google API key")
-
-    # OpenAI
-    openai_api_key: SecretStr = Field(description="OpenAI API key")
 
 
     def is_production(self) -> bool:

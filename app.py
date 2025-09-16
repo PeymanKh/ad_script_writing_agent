@@ -418,7 +418,7 @@ def initial_input_ui():
         st.markdown("**📝 Product Description**")
         product_description = st.text_area(
             label="Product Description",
-            value="Delisio is a personal chef and nutrition assistant. When a user signs up, they enter their age, weight, height, diet (e.g., vegan, keto), nutritional goal (e.g., weight loss, muscle gain), allergies, and cooking skill level.",
+            value="Delisio is a personal chef and nutrition assistant. When a user signs up, they enter their age, weight, height, diet (e.g., vegan, keto), nutritional goal (e.g., weight loss, muscle gain), allergies, and cooking skill level. next they can use 3 main features, one is that when they scan a food, Delisio will personalize the reicpe of the food that is healthy and is alligned their unique needs. next is surprise me which creates an unseen recipe from another cuisine, or nation that meets their needs, and finally if they scan their dish, they can see in depth details of the food such as calories, fat, virtamin c, b12, iron, etc...",
             help="A brief overview of your app.",
             height=100,
             label_visibility="collapsed"
